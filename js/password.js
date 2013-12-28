@@ -1,5 +1,6 @@
-var id = chrome.i18n.getMessage('@@extension_id');
-$inputs = $('input[type=password]');
+var id = chrome.i18n.getMessage('@@extension_id'),
+	$inputs = $('input[type=password]'),
+	style = null;
 
 $inputs.each(function(){
 	var $input = $(this),
@@ -12,7 +13,9 @@ $inputs.each(function(){
 
 	$span.mousedown(function() {
 	    timeoutId = setTimeout(function(){
-	    	var style = css($input);
+	    	if (style === null){
+	    		style = css($input);
+	    	}
 	    	$input.attr('type', 'text');
 	    	$input.css(style);
 	    }, 100);

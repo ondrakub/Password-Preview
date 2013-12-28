@@ -3,12 +3,6 @@ Password Preview
 
 Google Chrome extension to view passwords on any site
 
-Features
-========
-
-* Scrobbles now playing songs at 70% played time
-* Song information in popup window (artist, title, time)
-* Cloud Player state in icon
 
 Installation
 ============

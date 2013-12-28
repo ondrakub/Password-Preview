@@ -1,0 +1,23 @@
+{
+  "name": "Preview password",
+  "description": "After click on icon in input password, it will be displayed",
+  "version": "1.3.2",
+  "manifest_version": 2,
+  
+  "icons": {
+    "128": "images/icon_128.png"
+  },
+  
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["js/jquery-1.10.2.min.js", "js/css.js", "js/password.js"],
+    "run_at": "document_idle",
+    "all_frames": true
+  }],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "web_accessible_resources": [
+       "images/icon.png"
+     ]
+}

@@ -12,7 +12,7 @@ Install stable release from [Google Web Store](https://chrome.google.com/webstor
 Version History
 ===============
 
-**Version 1.3.2**
+**Version 1.3.3**
 Preview realese for testers
 
 

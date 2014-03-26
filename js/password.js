@@ -1,5 +1,5 @@
 var id = chrome.i18n.getMessage('@@extension_id'),
-	$inputs = $('input[type=password]');
+	$inputs = $('input:password').filter(function() { return this.value == ""; });
 
 $inputs.each(function(){
 	var $input = $(this),
